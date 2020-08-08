@@ -3,6 +3,7 @@ body {
   margin: 0;
 }
 
+/********** MIXIN's ***********/
 .nav-bar {
   display: flex;
   justify-content: space-between;
@@ -25,6 +26,7 @@ body {
 
 .hero {
   text-align: center;
+  overflow: hidden;
 }
 .hero .partner {
   position: absolute;
@@ -49,29 +51,30 @@ body {
 }
 .hero h1 {
   margin-top: -0.5em;
-  font-size: 2.4em;
+  font-size: 2.9em;
   padding: 0;
   margin: auto;
   list-style: none;
   line-height: 1.2em;
-  font-weight: 700;
+  font-weight: 800;
   text-align: center;
   color: #242d52;
 }
 .hero p {
-  width: 80%;
+  width: 95%;
   margin: auto;
   padding: 1em 0;
   font-weight: 400;
-  font-size: 1em;
+  font-size: 1.2em;
   color: #9095a7;
   line-height: 1.8em;
+  text-align: center;
 }
 .hero .img-partner {
   position: absolute;
-  bottom: -220px;
+  bottom: -250px;
   z-index: -1;
-  height: 350px;
+  height: 310px;
   width: 94.9%;
   margin: 0;
   margin: auto;
@@ -93,17 +96,74 @@ body {
 }
 
 .about {
-  margin-top: 5em;
+  margin-top: 6em;
 }
 .about h2 {
   padding: 0;
   margin: auto;
   list-style: none;
   line-height: 1.2em;
-  font-weight: 700;
+  font-weight: 800;
   text-align: center;
   color: #242d52;
-  width: 50%;
+  width: 80%;
+  font-size: 2.5em;
+  line-height: 1.5em;
+}
+.about p {
+  width: 95%;
+  margin: auto;
+  padding: 1em 0;
+  font-weight: 400;
+  font-size: 1.2em;
+  color: #9095a7;
+  line-height: 1.8em;
+  text-align: center;
+}
+
+.titulares .wrapper {
+  padding-left: 1em;
+}
+.titulares .wrapper .header-titular {
+  height: 2.7em;
+  border-radius: 20px 0 0 20px;
+  background-color: #ffefeb;
+  display: flex;
+  justify-content: flex-start;
+  align-items: center;
+}
+.titulares .wrapper .header-titular strong {
+  height: 1em;
+  color: white;
+  font-weight: 500;
+  font-size: 1.2em;
+  display: flex;
+  align-items: center;
+  padding: 0.5em 1.5em;
+  padding-bottom: 0.7em;
+  border-radius: 20px;
+  background-color: #f25f3a;
+}
+.titulares .wrapper .header-titular h4 {
+  padding-bottom: 0.2em;
+  padding-left: 1em;
+  font-size: 1.1em;
+  font-weight: 800;
+  color: #242d52;
+}
+.titulares .wrapper p {
+  width: 95%;
+  margin: auto;
+  padding: 1em 0;
+  font-weight: 400;
+  font-size: 1.2em;
+  color: #9095a7;
+  line-height: 1.8em;
+  text-align: center;
+  text-align: left;
+  font-size: 1.03em;
+  line-height: 1.7em;
+  margin-bottom: 3em;
 }
 
 /*# sourceMappingURL=styles.css.map */
