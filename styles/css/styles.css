@@ -139,7 +139,7 @@ body {
   font-size: 1.2em;
   display: flex;
   align-items: center;
-  padding: 0.5em 1.5em;
+  padding: 0.5em 1.3em;
   padding-bottom: 0.7em;
   border-radius: 20px;
   background-color: #f25f3a;
@@ -164,6 +164,57 @@ body {
   font-size: 1.03em;
   line-height: 1.7em;
   margin-bottom: 3em;
+}
+
+.slide-comment .wrapper {
+  margin: 0 2em;
+}
+.slide-comment .wrapper h2 {
+  padding: 0;
+  margin: auto;
+  list-style: none;
+  line-height: 1.2em;
+  font-weight: 800;
+  text-align: center;
+  color: #242d52;
+  font-size: 2.3em;
+  margin-bottom: 2em;
+}
+.slide-comment .wrapper .slide-page {
+  display: flex;
+  justify-content: center;
+}
+.slide-comment .wrapper .slide-page span {
+  border-radius: 100%;
+  height: 0.8em;
+  width: 0.8em;
+  border: 1px solid #f25f3a;
+  margin: 0 0.2em;
+  background-color: white;
+}
+.slide-comment .wrapper .commets-cards {
+  display: grid;
+  justify-content: center;
+  text-align: center;
+  grid-template-rows: 70px 30px 1fr;
+  background-color: #fafafa;
+  margin-bottom: 2em;
+  height: 250px;
+}
+.slide-comment .wrapper .commets-cards img {
+  margin: 0;
+  margin: auto;
+  height: 70px;
+  margin-top: -35px;
+}
+.slide-comment .wrapper .commets-cards strong {
+  margin: 0;
+  font-size: 1.1em;
+}
+.slide-comment .wrapper .commets-cards p {
+  margin: 0;
+  margin: 0 1em;
+  color: #9095a7;
 }
 
 /*# sourceMappingURL=styles.css.map */
