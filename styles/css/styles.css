@@ -192,7 +192,7 @@ body {
   margin: 0 0.2em;
   background-color: white;
 }
-.slide-comment .wrapper .commets-cards {
+.slide-comment .wrapper .slide-container .commets-cards {
   display: grid;
   justify-content: center;
   text-align: center;
@@ -200,21 +200,34 @@ body {
   background-color: #fafafa;
   margin-bottom: 2em;
   height: 250px;
+  animation: slider 0.3s ease-in-out;
 }
-.slide-comment .wrapper .commets-cards img {
+.slide-comment .wrapper .slide-container .commets-cards img {
   margin: 0;
   margin: auto;
   height: 70px;
   margin-top: -35px;
 }
-.slide-comment .wrapper .commets-cards strong {
+.slide-comment .wrapper .slide-container .commets-cards strong {
   margin: 0;
   font-size: 1.1em;
 }
-.slide-comment .wrapper .commets-cards p {
+.slide-comment .wrapper .slide-container .commets-cards p {
   margin: 0;
   margin: 0 1em;
   color: #9095a7;
+}
+
+@keyframes slider {
+  0% {
+    opacity: 0;
+  }
+  50% {
+    opacity: 0.4;
+  }
+  100% {
+    opacity: 1;
+  }
 }
 
 /*# sourceMappingURL=styles.css.map */

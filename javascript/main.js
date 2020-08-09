@@ -22,3 +22,22 @@ document.querySelector('.slide-page').addEventListener("click", () => {
 })
 
 
+
+
+let myElement = document.querySelector('.slide-container')
+let hammer = new Hammer(myElement)
+let i = 0;
+hammer.on('swipeleft', event => {
+  if (i < 3)
+    i++
+  dots.forEach((dot) => dot.style.backgroundColor = "white")
+  slides(i)
+
+})
+hammer.on('swiperight', event => {
+  if (i >= 1)
+    i--
+  dots.forEach((dot) => dot.style.backgroundColor = "white")
+  slides(i)
+
+})
