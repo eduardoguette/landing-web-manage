@@ -1,3 +1,30 @@
+@media screen and (max-width: 374px) {
+  .hero .bg-intro {
+    background-size: 300px !important;
+  }
+
+  p {
+    font-size: 1em !important;
+  }
+
+  h1 {
+    font-size: 2.4em !important;
+  }
+
+  h4 {
+    padding-left: 0.6em !important;
+    font-size: 1em !important;
+  }
+
+  input {
+    width: 50% !important;
+    font-size: 0.8em !important;
+  }
+
+  .attribution {
+    font-size: 0.7em !important;
+  }
+}
 body {
   font-family: "Be Vietnam", sans-serif;
   margin: 0;
@@ -8,29 +35,73 @@ body {
 }
 
 /********** MIXIN's ***********/
-.nav-bar {
+.header .wrapper {
+  position: relative;
+  z-index: 99;
+}
+.header .wrapper .header-content {
+  padding: 2em;
+  height: 30px;
   display: flex;
   justify-content: space-between;
   align-items: center;
-  padding: 2em 1.7em;
-  height: 4em;
-  background-color: transparent;
 }
-
-.logo-ppal {
-  height: 1.4em;
+.header .wrapper .header-content .header-logo {
+  height: 1.5em;
 }
-
-.container-ham {
-  position: relative;
-  z-index: 4;
-  height: 2em;
-  width: 2em;
+.header .wrapper .header-content .menu {
+  display: flex;
+  display: none;
+  list-style: none;
+  padding: 0;
+  margin: 0;
+}
+.header .wrapper .header-content .menu-checkbox {
+  display: none;
+}
+.header .wrapper .header-content .menu-checkbox:checked ~ .menu-button {
+  background: url("../../images/icon-close.svg") center center no-repeat;
+}
+.header .wrapper .header-content .menu-checkbox:checked ~ .menu {
+  display: block;
+  position: absolute;
+  top: 100%;
+  padding: 1em;
+  left: 0em;
+  right: 0em;
+  height: 100vh;
+  background: linear-gradient(to bottom, transparent 0%, #1d1e25 200%);
+}
+.header .wrapper .header-content .menu-checkbox:checked ~ .menu .menu-item {
+  text-align: center;
+  background-color: white;
+  padding: 0.7em 0;
+  margin: 0 2em;
+}
+.header .wrapper .header-content .menu-checkbox:checked ~ .menu .menu-item:first-of-type {
+  border-radius: 5px 5px 0 0;
+  padding-top: 3em;
+}
+.header .wrapper .header-content .menu-checkbox:checked ~ .menu .menu-item:last-child {
+  padding-bottom: 3em;
+  border-radius: 0 0 5px 5px;
+}
+.header .wrapper .header-content .menu-checkbox:checked ~ .menu a {
+  text-decoration: none;
+  color: #1d1e25;
+  font-weight: 700;
+}
+.header .wrapper .header-content .menu-button {
+  height: 40px;
+  width: 40px;
+  background: url("../../images/icon-hamburger.svg") center center no-repeat;
+}
+.header .wrapper .header-content button {
+  display: none;
 }
 
 .hero {
   text-align: center;
-  overflow: hidden;
 }
 .hero .partner {
   position: absolute;
@@ -316,8 +387,6 @@ footer .container-form form input {
   border-radius: 50px;
   outline: none;
   border: none;
-}
-footer .container-form form input::placeholder {
   padding-left: 2em;
   font-family: "Be Vietnam", sans-serif;
   font-weight: 500;
@@ -398,6 +467,11 @@ footer .copyright .attribution {
   color: white;
   font-size: 0.9em;
   padding: 2em 0;
+}
+
+button:hover,
+a:hover {
+  cursor: pointer;
 }
 
 /*# sourceMappingURL=styles.css.map */

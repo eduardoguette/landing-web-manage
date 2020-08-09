@@ -1,3 +1,4 @@
+@import "./_responsive.scss";
 $font-size: 16px;
 
 //  ### Primary
@@ -53,28 +54,78 @@ body {
   box-shadow: 1px 10px 10px $BrightRedSh;
   margin-top: 1.5em;
 }
-
-.nav-bar {
-  display: flex;
-  justify-content: space-between;
-  align-items: center;
-  padding: 2em 1.7em;
-  height: 4em;
-  background-color: transparent;
-}
-.logo-ppal {
-  height: 1.4em;
-}
-.container-ham {
-  position: relative;
-  z-index: 4;
-  height: 2em;
-  width: 2em;
+.header {
+  & .wrapper {
+    position: relative;
+    z-index: 99;
+    & .header-content {
+      padding: 2em;
+      height: 30px;
+      display: flex;
+      justify-content: space-between;
+      align-items: center;
+      & .header-logo {
+        height: 1.5em;
+      }
+      & .menu {
+        display: flex;
+        display: none;
+        list-style: none;
+        padding: 0;
+        margin: 0;
+      }
+      & .menu-checkbox {
+        display: none;
+        &:checked {
+          & ~ .menu-button {
+            background: url("../../images/icon-close.svg") center center no-repeat;
+          }
+          & ~ .menu {
+            display: block;
+            position: absolute;
+            top: 100%;
+            padding: 1em;
+            left: 0em;
+            right: 0em;
+            height: 100vh;
+            background: linear-gradient(to bottom,transparent 0%, $VeryDarkBlue 200%);
+            
+            .menu-item {
+              text-align: center;
+              background-color: $White;
+              padding: .7em 0;
+              margin: 0 2em;
+              &:first-of-type{
+                border-radius: 5px 5px 0 0;
+                padding-top: 3em;
+              }
+              &:last-child{
+                padding-bottom: 3em;
+                border-radius: 0 0 5px 5px;
+              }
+            }
+            a{
+              text-decoration: none;
+              color: $VeryDarkBlue;
+              font-weight: 700;
+            }
+          }
+        }
+      }
+      .menu-button {
+        height: 40px;
+        width: 40px;
+        background: url("../../images/icon-hamburger.svg") center center no-repeat;
+      }
+      & button {
+        display: none;
+      }
+    }
+  }
 }
 
 .hero {
   text-align: center;
-  overflow: hidden;
   & .partner {
     position: absolute;
     z-index: 2;
@@ -292,12 +343,10 @@ footer {
         border-radius: 50px;
         outline: none;
         border: none;
-        &::placeholder {
-          padding-left: 2em;
-          font-family: $BeV;
-          font-weight: 500;
-          font-size: 1.1em;
-        }
+        padding-left: 2em;
+        font-family: $BeV;
+        font-weight: 500;
+        font-size: 1.1em;
       }
       button {
         margin-left: 1em;
@@ -362,24 +411,26 @@ footer {
   li {
     list-style: none;
   }
-  .logo{
+  .logo {
     display: flex;
     justify-content: center;
     margin: 3em 0;
-    
   }
   .copyright {
-   text-align: center
-   ;
-   color: $DarkGrayishBlue;
-   a{
-     color: $BrightRed;
-     text-decoration: none;
-   }
-   .attribution{
-     color: $White;
-     font-size: .9em;
-     padding: 2em 0 ;
-   }
+    text-align: center;
+    color: $DarkGrayishBlue;
+    a {
+      color: $BrightRed;
+      text-decoration: none;
+    }
+    .attribution {
+      color: $White;
+      font-size: 0.9em;
+      padding: 2em 0;
+    }
   }
+}
+button:hover,
+a:hover {
+  cursor: pointer;
 }
