@@ -3,6 +3,10 @@ body {
   margin: 0;
 }
 
+.is-hidden {
+  display: none !important;
+}
+
 /********** MIXIN's ***********/
 .nav-bar {
   display: flex;
@@ -168,6 +172,23 @@ body {
 
 .slide-comment .wrapper {
   margin: 0 2em;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+.slide-comment .wrapper button {
+  margin: 3em 0 !important;
+  padding: 1em 2.1em;
+  background-color: #f25f3a;
+  color: white;
+  border-radius: 30px;
+  font-family: "Be Vietnam", sans-serif;
+  font-weight: 500;
+  font-size: 1em;
+  border: none;
+  letter-spacing: 0.1em;
+  box-shadow: 1px 10px 10px rgba(245, 155, 132, 0.5);
+  margin-top: 1.5em;
 }
 .slide-comment .wrapper h2 {
   padding: 0;
@@ -228,6 +249,91 @@ body {
   100% {
     opacity: 1;
   }
+}
+.simplify {
+  border: 1px solid red;
+  height: 400px;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  background-size: contain;
+  backface-visibility: 0.2;
+  background-color: #f25f3a;
+}
+.simplify h1 {
+  padding: 0;
+  margin: auto;
+  list-style: none;
+  line-height: 1.2em;
+  font-weight: 800;
+  text-align: center;
+  color: #242d52;
+  color: white;
+  font-weight: 600;
+  margin: 0;
+  padding: 0;
+  width: 85%;
+  font-size: 2.7em;
+}
+.simplify button {
+  padding: 1em 2.1em;
+  background-color: #f25f3a;
+  color: white;
+  border-radius: 30px;
+  font-family: "Be Vietnam", sans-serif;
+  font-weight: 500;
+  font-size: 1em;
+  border: none;
+  letter-spacing: 0.1em;
+  box-shadow: 1px 10px 10px rgba(245, 155, 132, 0.5);
+  margin-top: 1.5em;
+  box-shadow: none;
+  background-color: white;
+  color: #f25f3a;
+  font-weight: 700;
+  margin: 2em 0;
+}
+.simplify .imagen {
+  position: absolute;
+  top: 170px;
+  left: -400px;
+  opacity: 0.1;
+}
+.simplify .imagen img {
+  height: 500px;
+}
+
+footer {
+  background-color: #1d1e25;
+}
+footer .container-form form {
+  padding: 1em 0;
+  display: flex;
+  justify-content: center;
+}
+footer .container-form form input {
+  width: 60%;
+  border-radius: 50px;
+  outline: none;
+  border: none;
+}
+footer .container-form form button {
+  padding: 1em 2.1em;
+  background-color: #f25f3a;
+  color: white;
+  border-radius: 30px;
+  font-family: "Be Vietnam", sans-serif;
+  font-weight: 500;
+  font-size: 1em;
+  border: none;
+  letter-spacing: 0.1em;
+  box-shadow: 1px 10px 10px rgba(245, 155, 132, 0.5);
+  margin-top: 1.5em;
+}
+footer ul li {
+  list-style: none;
+  color: white;
 }
 
 /*# sourceMappingURL=styles.css.map */
