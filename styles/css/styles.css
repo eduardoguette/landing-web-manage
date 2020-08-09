@@ -251,7 +251,6 @@ body {
   }
 }
 .simplify {
-  border: 1px solid red;
   height: 400px;
   display: flex;
   flex-direction: column;
@@ -308,7 +307,7 @@ footer {
   background-color: #1d1e25;
 }
 footer .container-form form {
-  padding: 1em 0;
+  padding: 3em 0;
   display: flex;
   justify-content: center;
 }
@@ -318,22 +317,87 @@ footer .container-form form input {
   outline: none;
   border: none;
 }
-footer .container-form form button {
-  padding: 1em 2.1em;
-  background-color: #f25f3a;
-  color: white;
-  border-radius: 30px;
+footer .container-form form input::placeholder {
+  padding-left: 2em;
   font-family: "Be Vietnam", sans-serif;
   font-weight: 500;
-  font-size: 1em;
-  border: none;
-  letter-spacing: 0.1em;
-  box-shadow: 1px 10px 10px rgba(245, 155, 132, 0.5);
-  margin-top: 1.5em;
+  font-size: 1.1em;
 }
-footer ul li {
-  list-style: none;
+footer .container-form form button {
+  margin-left: 1em;
+  padding: 1.1em 2em;
+  border: none;
+  border-radius: 50px;
+  background-color: #f25f3a;
   color: white;
+  font-family: "Be Vietnam", sans-serif;
+  font-weight: 500;
+}
+footer .enlaces-container {
+  height: 150px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+footer .enlaces-container ul {
+  margin: 0;
+  padding: 0;
+  display: grid;
+  grid-template-columns: repeat(2, 1fr);
+  grid-auto-rows: minmax(40px, auto);
+  justify-content: center;
+  align-items: center;
+  grid-column-gap: 3em;
+  color: #fafafa;
+  list-style: none;
+}
+footer .enlaces-container ul li.uno {
+  grid-column: 1/1;
+  grid-row: 1/1;
+}
+footer .enlaces-container ul .dos {
+  grid-column: 1/1;
+  grid-row: 2/2;
+}
+footer .enlaces-container ul .tres {
+  grid-column: 1/1;
+  grid-row: 3;
+}
+footer .enlaces-container ul .cuatro {
+  grid-column: 1/1;
+  grid-row: 4;
+}
+footer .social ul {
+  display: flex;
+  padding: 2em 0em;
+  justify-content: center;
+}
+footer .social ul li {
+  margin: 0 1.3em;
+}
+footer .social ul li img {
+  height: 25px;
+}
+footer li {
+  list-style: none;
+}
+footer .logo {
+  display: flex;
+  justify-content: center;
+  margin: 3em 0;
+}
+footer .copyright {
+  text-align: center;
+  color: #9095a7;
+}
+footer .copyright a {
+  color: #f25f3a;
+  text-decoration: none;
+}
+footer .copyright .attribution {
+  color: white;
+  font-size: 0.9em;
+  padding: 2em 0;
 }
 
 /*# sourceMappingURL=styles.css.map */

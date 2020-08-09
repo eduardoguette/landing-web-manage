@@ -244,7 +244,6 @@ body {
 }
 
 .simplify {
-  border: 1px solid red;
   height: 400px;
   display: flex;
   flex-direction: column;
@@ -282,29 +281,105 @@ body {
 }
 
 footer {
-  
   background-color: $VeryDarkBlue;
-  .container-form{
-    form{
-      padding: 1em 0;
+  .container-form {
+    form {
+      padding: 3em 0;
       display: flex;
       justify-content: center;
-      input{
+      input {
         width: 60%;
-        
         border-radius: 50px;
         outline: none;
         border: none;
+        &::placeholder {
+          padding-left: 2em;
+          font-family: $BeV;
+          font-weight: 500;
+          font-size: 1.1em;
+        }
       }
-      button{
-        @include buttonPpl;
+      button {
+        margin-left: 1em;
+        padding: 1.1em 2em;
+        border: none;
+        border-radius: 50px;
+        background-color: $BrightRed;
+        color: $White;
+        font-family: $BeV;
+        font-weight: 500;
       }
     }
   }
-  ul {
-    li {
+  .enlaces-container {
+    height: 150px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    ul {
+      margin: 0;
+      padding: 0;
+      display: grid;
+      grid-template-columns: repeat(2, 1fr);
+      grid-auto-rows: minmax(40px, auto);
+      justify-content: center;
+      align-items: center;
+      grid-column-gap: 3em;
+      color: $VaryLightGray;
       list-style: none;
-      color: $White;
+      li.uno {
+        grid-column: 1 / 1;
+        grid-row: 1 / 1;
+      }
+      .dos {
+        grid-column: 1 / 1;
+        grid-row: 2 / 2;
+      }
+      .tres {
+        grid-column: 1 / 1;
+        grid-row: 3;
+      }
+      .cuatro {
+        grid-column: 1 / 1;
+        grid-row: 4;
+      }
     }
+  }
+  .social {
+    ul {
+      display: flex;
+      padding: 2em 0em;
+      justify-content: center;
+      li {
+        margin: 0 1.3em;
+        img {
+          height: 25px;
+        }
+      }
+    }
+  }
+
+  li {
+    list-style: none;
+  }
+  .logo{
+    display: flex;
+    justify-content: center;
+    margin: 3em 0;
+    
+  }
+  .copyright {
+   text-align: center
+   ;
+   color: $DarkGrayishBlue;
+   a{
+     color: $BrightRed;
+     text-decoration: none;
+   }
+   .attribution{
+     color: $White;
+     font-size: .9em;
+     padding: 2em 0 ;
+   }
   }
 }
