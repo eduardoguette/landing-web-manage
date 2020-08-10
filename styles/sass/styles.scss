@@ -88,23 +88,23 @@ body {
             left: 0em;
             right: 0em;
             height: 100vh;
-            background: linear-gradient(to bottom,transparent 0%, $VeryDarkBlue 200%);
-            
+            background: linear-gradient(to bottom, transparent 0%, $VeryDarkBlue 200%);
+
             .menu-item {
               text-align: center;
               background-color: $White;
-              padding: .7em 0;
+              padding: 0.7em 0;
               margin: 0 2em;
-              &:first-of-type{
+              &:first-of-type {
                 border-radius: 5px 5px 0 0;
                 padding-top: 3em;
               }
-              &:last-child{
+              &:last-child {
                 padding-bottom: 3em;
                 border-radius: 0 0 5px 5px;
               }
             }
-            a{
+            a {
               text-decoration: none;
               color: $VeryDarkBlue;
               font-weight: 700;
@@ -182,6 +182,11 @@ body {
   p {
     @include descP;
   }
+  @media screen and (max-width: 375px) {
+    h2 {
+      font-size: 2em;
+    }
+  }
 }
 
 .titulares {
@@ -238,7 +243,7 @@ body {
     h2 {
       @include titles;
       font-size: 2.3em;
-      margin-bottom: 2em;
+      margin-bottom: 4em;
     }
     .slide-page {
       display: flex;
@@ -278,6 +283,11 @@ body {
           margin: 0 1em;
           color: $DarkGrayishBlue;
         }
+      }
+    }
+    @media screen and (max-width: 375px) {
+      h2 {
+        font-size: 1.8em;
       }
     }
   }
@@ -322,12 +332,17 @@ body {
   }
   .imagen {
     position: absolute;
-    top: 170px;
-    left: -400px;
-    opacity: 0.1;
-    img {
+    left: -450px;
+    width: 550px;
+    height: 550px;
+    z-index: 0;
+    background: url("../../images/bg-tablet-pattern.svg") top 100px center no-repeat;
+    background-size: contain;
+    opacity: .1;
+    // opacity: 0.1;
+    /* img {
       height: 500px;
-    }
+    } */
   }
 }
 

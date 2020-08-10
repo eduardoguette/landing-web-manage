@@ -195,6 +195,11 @@ body {
   line-height: 1.8em;
   text-align: center;
 }
+@media screen and (max-width: 375px) {
+  .about h2 {
+    font-size: 2em;
+  }
+}
 
 .titulares .wrapper {
   padding-left: 1em;
@@ -270,7 +275,7 @@ body {
   text-align: center;
   color: #242d52;
   font-size: 2.3em;
-  margin-bottom: 2em;
+  margin-bottom: 4em;
 }
 .slide-comment .wrapper .slide-page {
   display: flex;
@@ -308,6 +313,11 @@ body {
   margin: 0;
   margin: 0 1em;
   color: #9095a7;
+}
+@media screen and (max-width: 375px) {
+  .slide-comment .wrapper h2 {
+    font-size: 1.8em;
+  }
 }
 
 @keyframes slider {
@@ -366,12 +376,16 @@ body {
 }
 .simplify .imagen {
   position: absolute;
-  top: 170px;
-  left: -400px;
+  left: -450px;
+  width: 550px;
+  height: 550px;
+  z-index: 0;
+  background: url("../../images/bg-tablet-pattern.svg") top 100px center no-repeat;
+  background-size: contain;
   opacity: 0.1;
-}
-.simplify .imagen img {
-  height: 500px;
+  /* img {
+    height: 500px;
+  } */
 }
 
 footer {
