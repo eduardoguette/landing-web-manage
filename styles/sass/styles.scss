@@ -65,7 +65,7 @@ body {
       justify-content: space-between;
       align-items: center;
       & .header-logo {
-        height: 1.5em;
+        height: 1.2em;
       }
       & .menu {
         display: flex;
@@ -94,13 +94,13 @@ body {
               text-align: center;
               background-color: $White;
               padding: 0.7em 0;
-              margin: 0 2em;
+              margin: 0 0.5em;
               &:first-of-type {
                 border-radius: 5px 5px 0 0;
-                padding-top: 3em;
+                padding-top: 2.2em;
               }
               &:last-child {
-                padding-bottom: 3em;
+                padding-bottom: 2.2em;
                 border-radius: 0 0 5px 5px;
               }
             }
@@ -108,6 +108,7 @@ body {
               text-decoration: none;
               color: $VeryDarkBlue;
               font-weight: 700;
+              font-size: 1.3em;
             }
           }
         }
@@ -131,33 +132,33 @@ body {
     z-index: 2;
     top: -50px;
     width: 100%;
-    height: 500px;
-    background: url("../../images/bg-tablet-pattern.svg") top -80px left 55px no-repeat;
+    height: 370px;
+    background: url("../../images/bg-tablet-pattern.svg") top -20px left 45px no-repeat;
     background-size: cover;
   }
   & .bg-intro {
     position: relative;
+    top: 9px;
     z-index: 3;
-    top: -0.5em;
-    height: 390px;
+    height: 305px;
     background: url("../../images/illustration-intro.svg") center center no-repeat;
-    background-size: 350px;
+    background-size: contain;
   }
   & .wrapper {
     width: 90%;
     margin: auto;
   }
   & h1 {
-    margin-top: -0.5em;
     font-size: 2.9em;
     @include titles;
+    margin-top: 0.2em;
   }
   & p {
     @include descP;
   }
   & .img-partner {
     position: absolute;
-    bottom: -250px;
+    bottom: -145px;
     z-index: -1;
     height: 310px;
     width: 94.9%;
@@ -180,7 +181,13 @@ body {
     line-height: 1.5em;
   }
   p {
-    @include descP;
+    text-align: center;
+    margin: 0;
+    padding: 0;
+    margin: 0 2em;
+    margin-top: 1.5em;
+    margin-bottom: 3em;
+    color: $DarkGrayishBlue;
   }
   @media screen and (max-width: 375px) {
     h2 {
@@ -243,7 +250,7 @@ body {
     h2 {
       @include titles;
       font-size: 2.3em;
-      margin-bottom: 4em;
+      margin-bottom: 3em;
     }
     .slide-page {
       display: flex;
@@ -285,7 +292,7 @@ body {
         }
       }
     }
-    @media screen and (max-width: 375px) {
+    @media screen and (max-width: 374px) {
       h2 {
         font-size: 1.8em;
       }
@@ -338,11 +345,7 @@ body {
     z-index: 0;
     background: url("../../images/bg-tablet-pattern.svg") top 100px center no-repeat;
     background-size: contain;
-    opacity: .1;
-    // opacity: 0.1;
-    /* img {
-      height: 500px;
-    } */
+    opacity: 0.1;
   }
 }
 
@@ -432,6 +435,7 @@ footer {
     margin: 3em 0;
   }
   .copyright {
+    padding: 1em 0;
     text-align: center;
     color: $DarkGrayishBlue;
     a {
