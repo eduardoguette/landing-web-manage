@@ -1,26 +1,20 @@
 @media screen and (max-width: 374px) {
-  .hero {
-    & .bg-intro {
-      background-size: 300px !important;
-    }
-    
-  }
-  p{
+  p {
     font-size: 1em !important;
   }
   h1 {
     font-size: 2.4em !important;
   }
-  h4{
-    padding-left: .6em !important;
+  h4 {
+    padding-left: 0.6em !important;
     font-size: 1em !important;
   }
-  input{
+  input {
     width: 50% !important;
-    font-size: .8em !important;
+    font-size: 0.8em !important;
   }
-  .attribution{
-    font-size: .7em !important;
+  .attribution {
+    font-size: 0.7em !important;
   }
-
 }
+
