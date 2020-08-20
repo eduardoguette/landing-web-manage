@@ -54,3 +54,4 @@ function MostrarComments() {
   });
 }
 MostrarComments();
+AOS.init();

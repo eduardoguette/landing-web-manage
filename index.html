@@ -6,15 +6,16 @@
     <meta name="viewport" content="user-scalable=no, width=device-width, initial-scale=1, maximum-scale=1" />
 
     <!-- displays site properly based on user's device -->
+    <link href="https://unpkg.com/aos@2.3.1/dist/aos.css" rel="stylesheet" />
 
     <link rel="icon" type="image/png" sizes="32x32" href="./images/favicon-32x32.png" />
     <link href="https://fonts.googleapis.com/css2?family=Be+Vietnam:wght@400;500;700;800&display=swap" rel="stylesheet" />
     <title>Frontend Mentor | Manage landing page</title>
     <link rel="stylesheet" href="./styles/css/styles.css" />
   </head>
-  <body>
-    <header class="header">
-      <div class="wrapper">
+  <body >
+    <header class="header" data-aos="fade-down"  data-aos-duration="3000">
+      <div class="wrapper ">
         <div class="header-content">
           <img class="header-logo" src="./images/logo.svg" alt="" />
           <input type="checkbox" id="menu" class="menu-checkbox" />
@@ -41,7 +42,7 @@
         </div>
       </div>
     </header>
-    <section class="hero">
+    <section class="hero" data-aos="fade-right"  data-aos-duration="3000">
       <div class="wrapper">
         <div class="hero-grid">
           <div class="bg-hero">
@@ -60,7 +61,7 @@
       </div>
     </section>
 
-    <section class="titulares">
+    <section class="titulares" data-aos="fade-up">
       <div class="wrapper">
         <div class="container-grid">
           <div class="about">
@@ -96,7 +97,7 @@
       </div>
     </section>
 
-    <section class="slide-comment">
+    <section class="slide-comment" data-aos="fade-up">
       <div class="wrapper">
         <h2>
           What they’ve said
@@ -136,7 +137,7 @@
         <button class="btn btn-ppal">Get Started</button>
       </div>
     </section>
-    <section class="simplify">
+    <section class="simplify" data-aos="fade-up">
       <div>
         <h1>Simplify how your team works today.</h1>
       </div>
@@ -146,7 +147,7 @@
       <div class="imagen"></div>
     </section>
 
-    <footer>
+    <footer data-aos="fade-up">
       <div class="container-form">
         <form action="#">
           <input type="text" placeholder="Updates in your inbox..." />
@@ -205,6 +206,7 @@
         <!--  <div class="attribution">Challenge by <a href="https://www.frontendmentor.io?ref=challenge" target="_blank">Frontend Mentor</a>. Coded by <a href="#">Eduardo Guette</a>.</div> -->
       </div>
     </footer>
+    <script src="https://unpkg.com/aos@2.3.1/dist/aos.js"></script>
 
     <script src="./javascript/Hammjs.js"></script>
     <script src="./javascript/main.js"></script>
